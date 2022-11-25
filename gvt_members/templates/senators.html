@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h2 class="text-center text-dark">Senators</h2>
+<p class="lead text-center mb-4">The current senators of the county government</p>
+
+<div class="row justify-content-center g-4">
+    {% for i in senators %}
+    <div class="col-sm-6 col-lg-3 d-flex">
+        <div class="card">
+            <div class="card-body text-center">
+                <img src="{{ i.photo.url}}" style="width: 70px; height: 70px; object-fit: cover;" class="rounded-circle mb-3" alt="{{ i.name }}">
+                <h3 class="card-title mb-3">{{ i.name }}</h3>
+                <p class="card-text">{{ i.title }}</p>
+                <p class="card-text">{{ i.description }}</p>
+            </div> 
+        </div>
+    </div>
+    {% endfor %}
+
+<p></p>
+
+
+</div>
+
+{% endblock %}

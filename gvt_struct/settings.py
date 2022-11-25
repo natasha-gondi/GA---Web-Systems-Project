@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'gvt_struct.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'members_db',
-        'USER': 'root',
-        'PASSWORD': 'password',
+        'NAME': 'codepie_db',
+        'USER': 'codepie',
+        'PASSWORD': 'mypassword',
         'HOST': 'localhost',
     }
 }
